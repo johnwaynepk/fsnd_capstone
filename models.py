@@ -7,9 +7,7 @@ import json
 '''
 Deploy a flask application to Heroku
 '''
-# os.environ['DATABASE_URL'] = <URL>
-# database_path = os.environ['DATABASE_URL']
-database_path = 'postgresql://localhost:5432/agency'
+database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 
@@ -18,7 +16,7 @@ setup_db(app)
     binds a flask application and a SQLAlchemy service
 '''
 def setup_db(app, database_path=database_path):
-    app.config["SQLALCHEMY_DATABASE_URI"] = database_path
+    app.config["SQLALCHEMY_DATABASE_URI"] = database_path or 'postgresql://localhost:5432/agency'
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.app = app
     db.init_app(app)
