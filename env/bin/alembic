@@ -1,4 +1,4 @@
-#!/Users/jingwei/Dropbox/class-demos/FSND/projects/capstone/starter/env/bin/python3
+#!/Users/jingwei/Dropbox/class-demos/04_Capstone/env/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'alembic==1.4.0','console_scripts','alembic'
 __requires__ = 'alembic==1.4.0'
 import re

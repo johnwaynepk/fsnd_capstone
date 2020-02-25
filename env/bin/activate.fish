@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/jingwei/Dropbox/class-demos/FSND/projects/capstone/starter/env"
+set -gx VIRTUAL_ENV "/Users/jingwei/Dropbox/class-demos/04_Capstone/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
